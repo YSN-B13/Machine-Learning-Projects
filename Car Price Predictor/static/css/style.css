@@ -1,0 +1,91 @@
+/* Reset & Base Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Deep Modern Gradient */
+    background: linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 100%);
+    /* Option 2: Colorful Gradient (Uncomment below to use) */
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    color: #333;
+}
+
+/* Glassmorphism Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 550px; /* Controls the width of the card */
+    overflow: hidden;
+}
+
+/* Header Styling */
+.card-header {
+    background: transparent;
+}
+
+.card-header h1 {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+}
+
+/* Form Inputs Styling */
+.form-floating > .form-control,
+.form-floating > .form-select {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+    background-color: #fff;
+}
+
+.form-floating > label {
+    color: #6c757d;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+    background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Result Box */
+.alert {
+    border-radius: 12px;
+    border: none;
+}
